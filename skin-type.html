@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glow - Skin Type Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="dashboard.html" class="logo-link">
+      <h1>🌸 Glow</h1>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="skin-type.html">Skin Type Guide</a>
+    <a href="cart.html">Cart 🛒</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+
+
+  <div class="skin-recommender-container">
+    <h2>Find the Best Product for Your Skin Type</h2>
+    <form id="skin-form">
+      <label>Select your skin type:</label><br><br>
+      <select id="skin-type" required>
+        <option value="">--Choose--</option>
+        <option value="oily">Oily</option>
+        <option value="dry">Dry</option>
+        <option value="combination">Combination</option>
+        <option value="sensitive">Sensitive</option>
+      </select>
+      <br><br>
+      <button type="submit">Show Recommendations</button>
+    </form>
+
+    <div id="recommendations" class="product-grid"></div>
+  </div>
+
+  <script src="js/skin-type.js"></script>
+</body>
+</html>

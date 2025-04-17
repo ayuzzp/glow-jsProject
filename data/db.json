@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Gentle Foaming Facewash",
+    "category": "facewash",
+    "price": 299,
+    "image": "assets/facewash3.jpg"
+  },
+  {
+    "name": "Deep Clean Facewash",
+    "category": "facewash",
+    "price": 349,
+    "image": "assets/facewash2.jpg"
+  },
+  {
+    "name": "Hydra Moisturizer",
+    "category": "moisturizer",
+    "price": 499,
+    "image": "assets/m2.jpg"
+  },
+  {
+    "name": "Oil-Free Moisturizer",
+    "category": "moisturizer",
+    "price": 459,
+    "image": "assets/m1.jpg"
+  },
+  {
+    "name": "Vitamin C Serum",
+    "category": "serum",
+    "price": 699,
+    "image": "assets/serum3.jpg"
+  },
+  {
+    "name": "Anti-Ageing Serum",
+    "category": "serum",
+    "price": 799,
+    "image": "assets/serum3.jpg"
+  },
+  {
+    "name": "Niacinamide Serum",
+    "category": "serum",
+    "price": 749,
+    "image": "assets/serum2.jpg"
+  },
+  {
+    "name": "Rose Water Toner",
+    "category": "toner",
+    "price": 199,
+    "image": "assets/t3.jpg"
+  },
+  {
+    "name": "Aloe Vera Toner",
+    "category": "toner",
+    "price": 229,
+    "image": "assets/t2.jpg"
+  },
+  {
+    "name": "Matte Sunscreen SPF 50",
+    "category": "sunscreen",
+    "price": 399,
+    "image": "assets/s2.jpg"
+  },
+  {
+    "name": "Glow Sunscreen SPF 30",
+    "category": "sunscreen",
+    "price": 349,
+    "image": "assets/s1.jpg"
+  },
+  {
+    "name": "Charcoal Facewash",
+    "category": "facewash",
+    "price": 379,
+    "image": "assets/facewash1.jpg"
+  },
+  {
+    "name": "Light Day Cream",
+    "category": "moisturizer",
+    "price": 399,
+    "image": "assets/m3.jpg"
+  },
+  {
+    "name": "Retinol Night Serum",
+    "category": "serum",
+    "price": 899,
+    "image": "assets/serum1.jpg"
+  },
+  {
+    "name": "Refreshing Toner Spray",
+    "category": "toner",
+    "price": 259,
+    "image": "assets/t1.jpg"
+  }
+]

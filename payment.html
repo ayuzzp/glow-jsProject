@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glow - Payment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="payment-page">
+  <!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="dashboard.html" class="logo-link">
+      <h1>🌸 Glow</h1>
+    </a>
+  </div>
+  <div class="nav-links">
+    <a href="skin-type.html">Skin Type Guide</a>
+    <a href="cart.html">Cart 🛒</a>
+    <button onclick="logout()">Logout</button>
+  </div>
+</nav>
+
+  <div class="payment-container">
+    <h2>Delivery Details</h2>
+    <form id="payment-form">
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="text" id="address" placeholder="Address" required><br>
+      <input type="text" id="city" placeholder="City" required><br>
+      <input type="text" id="pincode" placeholder="Pincode" required><br>
+      <input type="tel" id="phone" placeholder="Phone Number" required><br><br>
+
+      <h3>Choose Payment Method</h3>
+      <label>
+        <img src="assets/card-pay.jpg" alt="Card" />
+        <input type="radio" name="payment" value="card" required />
+        Credit/Debit Card
+      </label>
+    
+      <label>
+        <img src="assets/upi-pay.jpg" alt="UPI" />
+        <input type="radio" name="payment" value="upi" required />
+        UPI
+      </label>
+    
+      <label>
+        <img src="assets/cash-pay.webp" alt="COD" />
+        <input type="radio" name="payment" value="cod" required />
+        Cash on Delivery
+      </label>
+    
+      <button type="submit">Confirm Payment</button>
+    
+    </form>
+  </div>
+
+  <script src="js/payment.js"></script>
+</body>
+</html>

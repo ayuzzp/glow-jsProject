@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glow Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+      <a href="dashboard.html" class="logo-link">
+        <h1>🌸 Glow</h1>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="skin-type.html">Skin Type Guide</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  
+
+  <h2 style="text-align: center;">Your Cart</h2>
+  <div id="cart-items" class="product-grid"></div>
+  <div class="total-price" id="total-price"></div>
+  <a href="payment.html"><button class="pay-btn">Proceed to Payment</button></a>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

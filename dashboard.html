@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Facial Product Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+      <a href="dashboard.html" class="logo-link">
+        <h1>🌸 Glow</h1>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="skin-type.html">Skin Type Guide</a>
+      <a href="cart.html">Cart 🛒</a>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  
+
+
+  <!-- Category Filters -->
+  <div id="category-filters" class="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('facewash')">Facewash</button>
+    <button onclick="filterProducts('moisturizer')">Moisturizer</button>
+    <button onclick="filterProducts('serum')">Serum</button>
+    <button onclick="filterProducts('toner')">Toner</button>
+    <button onclick="filterProducts('sunscreen')">Sunscreen</button>
+  </div>
+
+  <!-- Product List -->
+  <div id="product-list" class="product-grid"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Glow Skincare. All rights reserved.</p>
+    <p>Follow us on 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
