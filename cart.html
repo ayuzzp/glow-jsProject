@@ -15,17 +15,30 @@
         <h1>🌸 Glow</h1>
       </a>
     </div>
+
     <div class="nav-links">
+      <a href="product-crud.html" class="active">Add Products</a>
       <a href="skin-type.html">Skin Type Guide</a>
-      <button onclick="logout()">Logout</button>
+      <a href="index.html">Logout</a>
     </div>
   </nav>
   
+   <!-- Background Video -->
+   <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/vedio/v1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-  <h2 style="text-align: center;">Your Cart</h2>
-  <div id="cart-items" class="product-grid"></div>
-  <div class="total-price" id="total-price"></div>
-  <a href="payment.html"><button class="pay-btn">Proceed to Payment</button></a>
+  <!-- Cart Content -->
+  <div class="cart-container">
+    <h2 style="text-align: center;">Your Cart</h2>
+    <div id="cart-items" class="product-grid"></div>
+    <div class="total-price" id="total-price"></div>
+    <a href="payment.html">
+      <button class="pay-btn">Proceed to Payment</button>
+    </a>
+  </div>
+  
 
   <script src="js/cart.js"></script>
 </body>

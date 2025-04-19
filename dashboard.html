@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>Facial Product Dashboard</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -16,11 +18,51 @@
     </div>
     <div class="nav-links">
       <a href="skin-type.html">Skin Type Guide</a>
+      <a href="product-crud.html" class="active">Add Products</a>
       <a href="cart.html">Cart 🛒</a>
       <button onclick="logout()">Logout</button>
     </div>
   </nav>
-  
+<!-- Image Banner -->
+<div class="image-banner">
+  <img src="assets/vedio/background.webp" alt="Glow Banner" />
+</div>
+
+
+<!-- Highlights Section -->
+<section class="glow-highlights">
+  <h2>Why Choose Glow? 💖</h2>
+  <div class="swiper highlightSwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide highlight">
+        <img src="assets/boxes/b01.jpg" alt="Natural" />
+        <h4>100% Natural</h4>
+        <p>Our ingredients are pure and nature-powered.</p>
+      </div>
+      <div class="swiper-slide highlight">
+        <img src="assets/boxes/b02.jpg" alt="Cruelty Free" />
+        <h4>Cruelty-Free</h4>
+        <p>No animal testing – because beauty is kind.</p>
+      </div>
+      <div class="swiper-slide highlight">
+        <img src="assets/boxes/b03.jpg" alt="Dermatologist Tested" />
+        <h4>Dermatologist Tested</h4>
+        <p>Safe for all skin types. Gentle. Effective.</p>
+      </div>
+      <div class="swiper-slide highlight">
+        <img src="assets/boxes/b04.jpg" alt="Glowing Skin" />
+        <h4>Instant Glow</h4>
+        <p>See visible results from the first use.</p>
+      </div>
+      <div class="swiper-slide highlight">
+        <img src="assets/boxes/b05.jpg" alt="Quality Tested" />
+        <h4>Quality Tested</h4>
+        <p>Every batch verified for the best results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
   <!-- Category Filters -->
@@ -47,5 +89,26 @@
   </footer>
 
   <script src="js/dashboard.js"></script>
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var highlightSwiper = new Swiper(".highlightSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
 </body>
 </html>

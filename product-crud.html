@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Glow - Manage Products</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="crud-page">
+
+  <!-- Background Video -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="assets/vedio/v1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="dashboard.html"><h1>🌸 Glow</h1></a>
+    </div>
+    <div class="nav-links">
+      <a href="dashboard.html">Dashboard</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <div class="crud-container">
+    <h2>Product Manager</h2>
+
+    <form id="product-form">
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <input type="text" id="productPrice" placeholder="Price" required />
+      <input type="text" id="productImage" placeholder="Image URL" required />
+      <button type="submit">Add Product</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productTableBody">
+        <!-- Products will be inserted here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/crud.js"></script>
+</body>
+</html>

@@ -79,3 +79,4 @@ window.addToCart = function(product) {
     localStorage.setItem('cart', JSON.stringify(cart));
     alert(`${product.name} added to cart!`);
 }
+
