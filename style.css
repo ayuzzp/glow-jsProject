@@ -766,3 +766,56 @@ table td {
   height: 100%;
 }
 
+
+.admin-section {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #fff8f9;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(255, 182, 193, 0.3);
+}
+
+.admin-section h3 {
+  text-align: center;
+  color: #d63384;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list li {
+  background-color: #ffe6ec;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.add-product-btn {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.add-product-btn .btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.add-product-btn .btn:hover {
+  background-color: #e055a1;
+}
+

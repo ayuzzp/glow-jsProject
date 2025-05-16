@@ -10,9 +10,15 @@ let users = JSON.parse(localStorage.getItem('users')) || [];
 // ------------------ Signup -------------------
 document.getElementById('signup').addEventListener('submit', function (e) {
     e.preventDefault();
-    const name = document.getElementById('signup-name').value;
-    const email = document.getElementById('signup-email').value;
+    const name = document.getElementById('signup-name').value.trim();
+    const email = document.getElementById('signup-email').value.trim();
     const password = document.getElementById('signup-password').value;
+
+    const nameRegex = /^[A-Za-z\s]+$/;
+    if (!nameRegex.test(name)) {
+        alert('Name must contain only letters and spaces.');
+        return;
+    }
 
     if (users.some(user => user.email === email)) {
         alert('Email already exists!');
@@ -23,11 +29,12 @@ document.getElementById('signup').addEventListener('submit', function (e) {
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
     localStorage.setItem('currentUser', JSON.stringify(newUser));
-    localStorage.setItem('cart', JSON.stringify([])); //  Clear cart on signup
+    localStorage.setItem('cart', JSON.stringify([])); // Clear cart on signup
 
     alert('Signup successful!');
     window.location.href = "dashboard.html";
 });
+
 
 // ------------------ Login -------------------
 document.getElementById('login').addEventListener('submit', function (e) {
